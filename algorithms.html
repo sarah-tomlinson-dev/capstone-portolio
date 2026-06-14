@@ -1,0 +1,29 @@
+<h3>Algorithms Enhancement Narrative</h3>
+
+<p>The InventStory mobile app was created for CS 360 in Android Studio using Java and SQLite.
+  It is an inventory management application that allows users to register and log in to accounts and add, edit, and remove inventory items from a list. 
+  The application includes user authentication, inventory management, database integration, SMS notifications, and CRUD functionality. 
+  I selected this artifact for my ePortfolio because it’s a multifaceted project that supports all three enhancement categories required for the capstone. 
+  The application was functional when originally developed, but it contained opportunities to improve both its architecture and the way inventory data was processed.</p>
+
+<p>For this enhancement, I focused on improving the algorithms and data structures used within the application. 
+  One of the most significant changes was converting inventory quantities from String values to Integer values throughout the app. 
+  This allowed inventory data to be processed numerically rather than as text, making sorting and comparison operations possible. I also expanded the layered architecture introduced 
+  in the previous enhancement by adding an ItemRepository and ItemService layer to separate inventory-related business logic from the user interface and database layers.</p>
+
+<p>To demonstrate the use of algorithms and data structures, I implemented inventory sorting functionality using Java ArrayLists, Collections.sort(), and Comparator operations. 
+  Inventory items are now automatically sorted by quantity from lowest stock to highest stock whenever the inventory list is refreshed. In addition, 
+  I implemented logic that identifies low-stock inventory items based on a specified threshold. These enhancements demonstrate the use of collection data structures, 
+  iteration, comparison operations, and sorting algorithms to organize and process inventory data more effectively. By centralizing this functionality within the service layer, the application 
+  is easier to maintain and provides more meaningful information to users.</p>
+
+<p>This enhancement aligns most closely with course outcomes three and four. Outcome three focuses on designing and evaluating computing solutions using algorithmic 
+  principles and computer science practices, while outcome four focuses on implementing computing solutions using modern tools and techniques. 
+  Through this enhancement, I gained a stronger understanding of how data types, data structures, and algorithms work together to support application functionality. 
+  One challenge I encountered was ensuring that the sorting algorithm was executed whenever the inventory list refreshed. Initially, the application continued displaying items 
+  in the order they were entered because the sorting logic was only being called during application startup. After identifying and correcting this issue, the inventory 
+  list successfully updated in sorted order whenever inventory data changed. 
+  This process reinforced the importance of testing, debugging, and understanding application flow when implementing algorithmic improvements.</p>
+
+<p>References</p>
+<p>Oracle. (n.d.). Collections class. https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html</p>
