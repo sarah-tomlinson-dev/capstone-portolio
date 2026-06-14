@@ -1,0 +1,29 @@
+<h3>Databases Enhancement</h3>
+
+<p>The InventStory mobile application was originally created for CS-360 using Android Studio, Java, and SQLite. 
+  The application allows users to register and log in to individual accounts and manage inventory through basic create, read, update, and delete (CRUD) operations. 
+  Users can add, edit, and remove inventory items while receiving notifications when inventory reaches low levels. 
+  I selected this artifact for my ePortfolio because it provides opportunities to demonstrate skills in software engineering, algorithms and data structures, 
+  and database management within a single application. While the application was functional when originally developed, it contained opportunities for 
+  improvement in the way data was organized and managed within the database.</p>
+
+<p>For this database enhancement, I improved the app's data structure by establishing a relationship between users and inventory items. 
+  Originally, all inventory records were stored without any association to a specific user, meaning inventory data was effectively shared across accounts. 
+  To address this, I modified the inventory database schema to include a user identifier associated with each inventory item. 
+  I also implemented user-specific queries that retrieve only the inventory records belonging to the currently authenticated user. 
+  These enhancements improved database organization, reduced data redundancy, and better reflected relational database design principles. 
+  The artifact showcases my ability to design database structures, implement CRUD operations, create reusable database access methods, and 
+  integrate database functionality throughout an application. These changes also improved scalability by allowing the application to support multiple users with separate inventories.</p>
+
+<p>This enhancement aligns closely with the course outcomes I planned to address in Module One, particularly outcomes three and four. 
+  The redesign required evaluating database structures and implementing a solution that improved both functionality and maintainability while 
+  following established software development practices. The enhancement also contributed to outcome five by improving data separation between 
+  users and reducing the likelihood that one user could access another user's inventory information. At this point in the capstone project, 
+  I believe I have successfully demonstrated the primary outcomes originally identified for each enhancement category and do not anticipate significant changes to my outcome-coverage plan.</p>
+
+<p>Through this enhancement process, I developed a stronger understanding of relational database concepts and the importance of designing data 
+  structures that support future growth. One challenge I encountered was ensuring that user identifiers were correctly passed throughout the 
+  application and associated with inventory records during creation and retrieval. Debugging these issues required careful testing across multiple 
+  user accounts to verify that each user could only view their own inventory. I also learned how changes to a database schema often require 
+  corresponding updates throughout multiple layers of an application. Overall, this enhancement strengthened both my technical database skills 
+  and my understanding of how database design decisions affect application functionality and maintainability.</p>
