@@ -1,0 +1,25 @@
+<h3>Software Engineering Enhancement Narrative</h3>
+
+<p>The InventStory mobile app was created for CS 360 in Android Studio using Java and SQLite.
+   It’s a simple inventory application that allows users to register and login with accounts and add, edit, and remove inventory items to a list easily.
+   It uses basic CRUD features, and I chose it for the ePortfolio because it is a multifaceted artifact that aligns with all three enhancements required for the capstone project.
+   It features user authentication, inventory management, database integration, UI functions, as well as the CRUD functionality. 
+  The app was functional at the time it was built but relied heavily on Activity logic that was tightly coupled and not modularly designed.</p>
+
+<p>I’ve improved the artifact at this point by adding a UserRepository layer and UserService layer, which allowed me to pull much of the functionality out of the 
+  RegisterActivity layer so that it could focus on the UI interactions, while the other layers focus on the validation and database interactions. Additionally, 
+  the SQLiteDBHelper now strictly handles the SQLite operations, whereas before it handled other tasks as well. These changes have improved the scalability and 
+  maintenance of the app, while introducing separation of concerns (GeeksforGeeks, 2024). I also introduced a more organized system of packages and classes by 
+  adding activities, adapters, database, models, repository, service and utilities packages and moving each class into its appropriate package, making it easier 
+  to find and understand the structure of the app.</p>
+
+<p>This enhancement aligns most closely with course outcomes three and four, which focus on designing computing solutions using software engineering practices 
+  and implementing professional-quality computing solutions using modern tools and techniques. Through the enhancement process, I gained a stronger understanding
+  of how layered architecture interacts and how responsibilities should be distributed across components. One challenge I encountered was separating logic that 
+  had originally been embedded directly within the Activity classes. Refactoring the existing code required careful testing and repeated adjustments to ensure that 
+  functionality continued to work correctly while avoiding duplicated logic across layers. Overall, this enhancement improved both my technical understanding of software architecture 
+  and my ability to restructure existing code into a more maintainable design.</p>
+
+<p>References</p>
+<p>GeeksforGeeks. (2024, February 13). Separation of Concerns (SoC). GeeksforGeeks. https://www.geeksforgeeks.org/software-engineering/separation-of-concerns-soc/</p>
+
