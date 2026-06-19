@@ -2,18 +2,61 @@
 <html>
 <head>
     <title>CS 499 Capstone Portfolio</title>
-    	<nav>
-        <button type="button" onclick="index.html">Home</button>
-        <button type="button" onclick="professional-self-assessment.html">Professional Self-Assessment</button>
-        <button type="button" onclick="code-review.html">Code Review</button>
-        <button type="button" onclick="software-engineering.html">Software Engineering</button>
-        <button type="button" onclick="algorithms.html">Algorithms & Data Structures</button>
-        <button type="button" onclick="databases.html">Databases</button>
-		</nav>
-</nav>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 5px;
+            background-color: #2d6cdf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #1d4fa8;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .card {
+    		border: 1px solid #ddd;
+    		padding: 15px;
+    		margin-bottom: 20px;
+    		border-radius: 8px;
+		}
+    </style>
 </head>
+
 <body>
-    <h1>Sarah Tomlinson - CS 499 Capstone Portfolio</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="professional-self-assessment.html">Professional Self-Assessment</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="software-engineering.html">Software Engineering</a>
+    <a href="algorithms.html">Algorithms & Data Structures</a>
+    <a href="databases.html">Databases</a>
+</nav>
+
+	<h1>Sarah Tomlinson</h1>
+    <h3>Computer Science Graduate | Aspiring Data Analyst</h3>
     <p>Welcome to my Computer Science Capstone ePortfolio.</p>
     <p>This portfolio showcases enhancements completed throughout CS 499 and demonstrates my growth in software engineering, algorithms and data structures, and databases.</p>
 
@@ -36,6 +79,7 @@
 
     <h2>Project Enhancements</h2>
 
+	<div class="card">
     <h3>Software Design and Engineering Enhancement</h3>
     <p>This enhancement focused on improving the software architecture of the InventStory Android inventory application. 
         The original application relied heavily on Activity classes for application logic and database interactions. 
@@ -46,7 +90,8 @@
 
     <p><a href="https://github.com/sarah-tomlinson-dev/capstone-portolio/tree/main/Software%20Design%20%26%20Engineering%20Enhancement" target="_blank">
     Download Enhanced Source Code</a></p>
-
+    </div>
+<div class="card">
     <h3>Algorithms and Data Structures Enhancement</h3>
     <p>This enhancement focused on improving the algorithmic functionality of the InventStory application. 
         I implemented inventory sorting and filtering features through a dedicated service layer, allowing inventory items 
@@ -56,7 +101,8 @@
     <p><a href="algorithms.html">View Enhancement Narrative</a></p>
 
     <p><a href="https://github.com/sarah-tomlinson-dev/capstone-portolio/tree/main/Algorithms%20%26%20Data%20Structure%20Enhancement">Download Enhanced Source Code</a></p>
-
+    </div>
+<div class="card">
     <h3>Database Enhancement</h3>
     <p>This enhancement focused on improving the database design of the InventStory application by establishing relationships between users and inventory records. 
         I redesigned the inventory database structure to associate items with specific users and implemented user-specific queries to retrieve only the inventory 
@@ -65,6 +111,7 @@
     <p><a href="databases.html">View Enhancement Narrative</a></p>
 
     <p><a href="https://github.com/sarah-tomlinson-dev/capstone-portolio/tree/main/Databases%20Enhancement">Download Enhanced Source Code</a></p>
+    </div>
     
 </body>
 </html>
